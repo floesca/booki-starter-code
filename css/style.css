@@ -95,38 +95,21 @@ h3 {
     margin-top: 0px;
 }
 
-.row1,
-.row2 {
-    display: flex;
-    gap: 30px;
-    max-width: 100%;
-} 
-
-.row2 {
-    margin-bottom: 30px;
-}
 .hebergements-cards {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: row;
     width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 .hebergements-cards a {
     display: block;
+    width: 30%;
+    margin-bottom: 25px;
 }
 .hebergements{
     width: 65%;
     margin-right: 0px;
-}
-.hebergements-cards {
-    width: 100%;
-}
-
-.row1 a,
-.row2 a {
-    flex: 1;
-    min-width: 0;
-    display: block;
 }
 
 .hebergements-cards img {
@@ -236,7 +219,7 @@ nav img {
     margin-bottom: 20px;
 }
 
-.éco, .familial, .romantique, .pépites {
+.filter-bar div {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -246,11 +229,13 @@ nav img {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     height: 40px;
+    cursor: pointer;
 }
 
-.éco:hover , .familial:hover, .romantique:hover, .pépites:hover {
+.filter-bar div:hover {
     background-color: #DEEBFF;
 }
+
     /*filter-bar*/
 
     /*info*/
@@ -330,7 +315,6 @@ nav img {
     justify-content: space-between;
     gap: 30px;
     margin-top: 25px;
-
 }
 .activités {
     margin-top: 35px;
@@ -338,15 +322,15 @@ nav img {
     margin-right: 30px;
 }
 .activités .card {
-    flex: 1;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .activités a {
-    flex: 1;
-    min-width: 0;
     display: block;
+    width: 25%;
 }
     /*Activités*/
 
@@ -354,7 +338,6 @@ nav img {
 footer{
     display: flex;
     flex-direction: row;
-    justify-content:flex-start;
     background-color: #F2F2F2;
     gap: 15%;
     margin-top: 35px;
@@ -370,6 +353,7 @@ footer ul {
 footer li {
     padding-bottom: 20px;
 }
+
     /*footer*/
     
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -407,6 +391,11 @@ footer li {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+    .activités img {
+        height: 150px;
+    }
+
 }
 
 /* Small devices (phones, less than 768px) */
